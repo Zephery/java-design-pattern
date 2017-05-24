@@ -5,6 +5,7 @@ package decorator;
  */
 public abstract class CondimentDecorator extends Breakfast{
     Breakfast myfood;
+
     public CondimentDecorator(Breakfast myfood){
         this.myfood=myfood;
     }

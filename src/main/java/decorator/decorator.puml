@@ -1,0 +1,18 @@
+@startuml
+
+abstract class Breakfast
+class Burger
+class Cheese
+abstract class CondimentDecorator
+
+Burger<|--Breakfast
+Cheese <|-- CondimentDecorator
+Ham <|-- CondimentDecorator
+Toast <|-- Breakfast
+CondimentDecorator<|--Breakfast
+
+abstract class Breakfast {
+String description
+Double cost()
+}
+@enduml
